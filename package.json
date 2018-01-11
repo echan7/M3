@@ -21,9 +21,13 @@
     "test": "echo \\\"Error: no test specified\\\" && exit 1"
   },
   "dependencies": {
-    "bc": "^0.1.1"
+    "bc": "^0.1.1",
+    "crossfilter": "^1.3.12",
+    "d3": "^4.12.2",
+    "grunt": "^1.0.1"
   },
   "devDependencies": {
+    "babel-eslint": "^8.2.1",
     "express": "^4.15.3",
     "grunt": "^1.0.1",
     "grunt-cli": "^1.2.0",

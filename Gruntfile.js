@@ -103,7 +103,7 @@ module.exports = function (grunt) {
                     rules: {
                         'comma-dangle': 1,
                         'quotes': [ 1, 'single' ],
-                        'no-undef': 1,
+                  //      'no-undef': 1,
                         'global-strict': 0,
                         'no-extra-semi': 1,
                         'no-underscore-dangle': 0,
@@ -111,9 +111,7 @@ module.exports = function (grunt) {
                         'no-unused-vars': 1,
                         'no-trailing-spaces': [1, { 'skipBlankLines': true }],
                         'no-unreachable': 1,
-                        'no-alert': 0,
-                        'react/jsx-uses-react': 1,
-                        'react/jsx-uses-vars': 1
+                        'no-alert': 0
                     }
                 }
             }
