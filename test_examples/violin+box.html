@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Please help </title>
+   <link rel="stylesheet" type="text/css" href="../style/a3.css">
+  <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.11/crossfilter.js"></script>
+  <script type="text/javascript" src="/lib/a3.v1.0.2.js"></script>
+
+</head>
+<body>
+
+<div class="chart-wrapper" id="chart-distro1"></div>
+<script type="text/javascript">
+    var chart1;
+    d3.csv('https://raw.githubusercontent.com/asielen/D3_Reusable_Charts/master/distro_chart/data.csv' /*'http://dimplejs.org/data/example_data.tsv'*/ /*train.csv"*/, function(error, data) {
+        data.forEach(function (d) {d["value"] = +d["value"];});
+        var data2 = data.filter(function(d){return d["Sales"] < 2000});
+        var data2 = data2.filter(function(d){return d["Store"] < 20});
+        chart1 = a3.plot.setUp({
+            data:data,
+            xName:'date',
+            yName:'value',
+            //axisLabels: {xAxis: 'Datesssyyyggg', yAxis: 'Valuessss'},
+            selector:"#chart-distro1",
+            caption:"Here's your chart, Please don't fire me",
+            chartSize:{height:460, width:960},
+            constrainExtremes:false});
+    //    chart1.renderDataPlots();
+    //    chart1.renderNotchBoxes({showNotchBox:false});
+        chart1.renderViolinPlot({showViolinPlot:true, bandWidth:20, clamp:0 });
+        chart1.renderBoxPlot({showOutliers:false, boxWidth: 10, colors:['#555'], lineWidth:15, showWhiskers: false});
+    });
+</script>
+</body>
+</html>
+
+
+

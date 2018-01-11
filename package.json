@@ -1,0 +1,44 @@
+{
+  "name": "a3",
+  "version": "1.1.0",
+  "license": "MIT",
+  "description": "A multi-dimensional charting library to work with crossfilter and rendered on top of d3.js ",
+  "keywords": [
+    "coming",
+    "soon"
+  ],
+  "homepage": "https://github.com/DataChatAI/ava#readme",
+  "bugs": {
+    "url": "https://github.com/DataChatAI/ava/issues"
+  },
+  "author": "Eric Chan",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DataChatAI/ava.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "dependencies": {
+    "bc": "^0.1.1"
+  },
+  "devDependencies": {
+    "express": "^4.15.3",
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^2.2.0",
+    "grunt-contrib-jasmine": "^1.1.0",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-uglify": "^3.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-eslint": "^20.0.0",
+    "grunt-jsdoc-to-markdown": "^3.0.0",
+    "grunt-jslint": "^1.1.15",
+    "load-grunt-tasks": "^3.5.2",
+    "requirejs": "^2.3.3"
+  }
+}

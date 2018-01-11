@@ -1,0 +1,186 @@
+/*Primary Chart*/
+
+/*Nested divs for responsiveness*/
+.chart-wrapper {
+    max-width: 800px;  /*Overwritten by the JS*/
+    min-width: 304px;
+    margin-bottom: 8px;
+}
+.chart-wrapper .inner-wrapper {
+    width: 100%;
+}
+.chart-wrapper .outer-box {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.chart-wrapper .inner-box {
+    width: 100%;
+    height: 100%;
+}
+
+.chart-wrapper text {
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+.chart-wrapper .axes path,
+.chart-wrapper .axes line {
+    fill: none;
+    stroke: #888;
+    stroke-width: 2px;
+    shape-rendering: crispEdges;
+}
+
+.chart-wrapper .y.axis .tick line {
+    stroke: lightgrey;
+    opacity: 0.6;
+    stroke-dasharray: 2,1;
+    stroke-width: 1;
+    shape-rendering: crispEdges;
+
+}
+
+.chart-wrapper .x.axis .domain {
+ /* display: none;*/
+}
+
+.chart-wrapper div.tooltip {
+    position: absolute;
+    text-align: left;
+    padding: 3px;
+    font: 15px sans-serif;
+    background: lightcyan;
+    border: 0px;
+    border-radius: 1px;
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+/* Legend */
+.chart-wrapper .legend-title {
+    padding-bottom: 5px;
+    font-weight: bold;
+    fill: grey;
+}
+
+/*Box Plot*/
+.chart-wrapper .box-plot .box {
+    fill-opacity: 0.4;
+    stroke-width: 2;
+}
+.chart-wrapper .box-plot line {
+    stroke-width: 2px;
+}
+.chart-wrapper .box-plot circle {
+    fill: white;
+    stroke: black;
+}
+
+.chart-wrapper .box-plot .median {
+    stroke: black;
+}
+
+.chart-wrapper .box-plot circle.median {
+    /*the script makes the circles the same color as the box, you can override this in the js*/
+    fill: white !important;
+}
+
+.chart-wrapper .box-plot .mean {
+    stroke: white;
+  /*  stroke-dasharray: 2,1; */
+    stroke-width: 1px;
+}
+
+.chart-wrapper .box-plot circle.mean {
+    /*the script makes the circles the same color as the box, you can override this in the js*/
+    fill: black !important;
+}
+
+@media (max-width:500px){
+    .chart-wrapper .box-plot circle {display: none;}
+}
+
+/* Legend Box Color */
+.chart-wrapper .box-legend {
+    fill-opacity: 0.4;
+    stroke-width: 2;
+}
+
+/*Violin Plot*/
+
+.chart-wrapper .violin-plot .area {
+    shape-rendering: geometricPrecision;
+    opacity: 0.4;
+}
+
+.chart-wrapper .violin-plot .line {
+    fill: none;
+    stroke-width: 2px;
+    shape-rendering: geometricPrecision;
+}
+
+/*Notch Plot*/
+.chart-wrapper .notch-plot .notch {
+    fill-opacity: 0.4;
+    stroke-width: 2;
+}
+
+/* Point Plots*/
+.chart-wrapper .points-plot .point {
+    stroke: black;
+    stroke-width: 1px;
+}
+
+.chart-wrapper .metrics-lines {
+    stroke-width: 4px;
+}
+
+/* Legend Box Color */
+.chart-wrapper .violin-legend {
+    fill-opacity: 0.4;
+    stroke-width: 2;
+}
+
+/* Non-Chart Styles for demo*/
+.chart-options  {
+    min-width: 200px;
+    font-size: 13px;
+    font-family: sans-serif;
+}
+.chart-options button {
+    margin: 3px;
+    padding: 3px;
+    font-size: 15px;
+}
+.chart-options p {
+    display: inline;
+}
+@media (max-width:500px){
+    .chart-options p {display: block;}
+}
+
+.chart-wrapper .caption {
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+.chart-wrapper .errorMessage {
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+
+.chart-wrapper .links line {
+    stroke: #999;
+    stroke-opacity: 0.6;
+}
+
+.chart-wrapper .nodes circle {
+    stroke: #fff;
+    stroke-width: 1.5px;
+}
+
+
+

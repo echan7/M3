@@ -1,0 +1,6 @@
+/**
+ * Copyright 2017 DataChat
+ *	www.datachat.ai
+
+ *	All rights reserved
+ */
