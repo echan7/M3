@@ -1,6 +1,6 @@
 [![NPM Status](https://badge.fury.io/js/dc.svg)](http://badge.fury.io/js/dc)
 
-a3.js
+M3.js
 =====
 
 Dimensional charting built to work with Ava DataChat app.
@@ -24,14 +24,14 @@ Version v1.1.0
 --------------------
 Implemented graph nodes
 
-Build a3 locally
+Build M3 locally
 --------------------
 Fork the library, then run
 ```
 npm install
 ```
 
-Deploying a3 as development mode
+Deploying M3 as development mode
 ---------------------------
 Run the following command then open http://localhost:3000 at your local browser
 ```
@@ -42,7 +42,7 @@ grunt dev
 * Dev excludes keeping track of Gruntfile.js (The package manager), if changes made to Gruntfile.js, exit and delpoy development mode again.
 * It does not keep track of errors from logic, html or css. Use your browser debugger tool instead (F12)
 
-Deploying a3 as final version
+Deploying M3 as final version
 ---------------------------
 After running test with no errors or warnings
 ```
@@ -52,5 +52,5 @@ grunt push
 License
 --------------------
 
-a3.js is an open source javascript library and licensed under
+M3.js is an open source javascript library and licensed under
 [MIT License](https://opensource.org/licenses/MIT).
