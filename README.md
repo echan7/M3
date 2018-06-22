@@ -3,7 +3,7 @@
 M3.js
 =====
 
-Dimensional charting built to work with Ava DataChat app.
+Dimensional charting built to work with Ava DataChat app. Check out some demos at https://bl.ocks.org/echan7 
 
 Version v1.0.0
 --------------------
